@@ -7,7 +7,7 @@ namespace Logical_Programs
         static void Main(string[] args)
         {
             Console.WriteLine("1 Fibonacci Series \n2 Perfect Number \n3 Prime Number" +
-                "\n4 Reverse Number");
+                "\n4 Reverse Number \n5 Coupon Numbers");
             int Ans=Convert.ToInt32(Console.ReadLine());
             switch(Ans)
             {
@@ -26,6 +26,10 @@ namespace Logical_Programs
                 case 4:
                     Reverse_Number reverse_Number=new Reverse_Number();
                     reverse_Number.Reversenumber();
+                    break;
+                case 5:
+                    Coupon_Numbers coupon_Numbers=new Coupon_Numbers();
+                    coupon_Numbers.CouponNumber();
                     break;  
                 default:
                     Console.WriteLine("Enter valid Number");
