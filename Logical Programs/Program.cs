@@ -6,7 +6,8 @@ namespace Logical_Programs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1 Fibonacci Series \n2 Perfect Number \n3 Prime Number");
+            Console.WriteLine("1 Fibonacci Series \n2 Perfect Number \n3 Prime Number" +
+                "\n4 Reverse Number");
             int Ans=Convert.ToInt32(Console.ReadLine());
             switch(Ans)
             {
@@ -21,6 +22,10 @@ namespace Logical_Programs
                 case 3:
                     Prime_Number prime_Number=new Prime_Number();
                     prime_Number.PrimeNumber();
+                    break;  
+                case 4:
+                    Reverse_Number reverse_Number=new Reverse_Number();
+                    reverse_Number.Reversenumber();
                     break;  
                 default:
                     Console.WriteLine("Enter valid Number");
